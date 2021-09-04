@@ -1,0 +1,167 @@
+#include <iostream>
+using namespace std;
+
+void seta(){
+    int correct=0;
+    int wrong=0;
+    cout<<"Q-1 Which of the following is the correct syntax to add the header file in the C++ program?"<<endl;
+    cout<<"(1)#include<userdefined>  (2)#include userdefined.h (3)#include userdefined.h (4)Both option 1 and 2"<<endl;
+    int answer1;
+    cin>>answer1;
+    if(answer1==1){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 1";
+        wrong++;
+    }
+    cout<<"Q-2 Which of the following is the correct identifier?"<<endl;
+    cout<<"(1)$var_name  (2)VAR_123 (3)varname@ (4)None of the above"<<endl;
+    int answer2;
+    cin>>answer2;
+    if(answer2==2){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 2"<<endl;
+        wrong++;
+    }
+    
+     cout<<"Q-3 Which of the following is the address operator?"<<endl;
+    cout<<"(1)@  (2)# (3)& (4)%"<<endl;
+    int answer3;
+    cin>>answer3;
+    if(answer3==3){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 3"<<endl;
+        wrong++;
+    }
+    
+     cout<<"Q-4 The programming language that has the ability to create new data types is called___."<<endl;
+    cout<<"(1)Overloaded  (2)Encapsulated (3)Reprehensible (4)Extensible"<<endl;
+    int answer4;
+    cin>>answer4;
+    if(answer4==4){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 4"<<endl;
+        wrong++;
+    }
+    
+     cout<<"Q-5 Which of the following is the original creator of the C++ language?"<<endl;
+    cout<<"(1)Dennis Ritchie  (2)Ken Thompson (3)Bjarne Stroustrup (4)Brian Kernighan"<<endl;
+    int answer5;
+    cin>>answer5;
+    if(answer5==3){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 3"<<endl;
+        wrong++;
+    }
+    cout<<endl;
+    cout<<"*************RESULT***************"<<endl;
+    cout<<"No. of correct answers "<<correct<<endl;
+    cout<<"Total marks: "<<correct<<"/5"<<endl;
+    if(correct>=3){
+        cout<<"You are eligible for interview"<<endl;
+    }else{
+        cout<<"You are not eligible for interview"<<endl;
+    }
+}
+
+void setb(){
+    int correct=0;
+    int wrong=0;
+    cout<<"Q-1 Which of the following comment syntax is correct to create a single-line comment in the C++ program?"<<endl;
+    cout<<"(1)//Comment (2)/Comment (3)/Comment/ (4)None of these"<<endl;
+    int answer1;
+    cin>>answer1;
+    if(answer1==1){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 1";
+        wrong++;
+    }
+    cout<<"Q-2 C++ is a ___ type of language. "<<endl;
+    cout<<"(1)High level (2)Low level (3)Middle Level (4)None of these"<<endl;
+    int answer2;
+    cin>>answer2;
+    if(answer2==3){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 3"<<endl;
+        wrong++;
+    }
+    
+     cout<<"Q-3 Which of the following refers to using the existing code instead of rewriting it?"<<endl;
+    cout<<"(1)Inheritance (2)Encapsulation (3)Abstraction (4)Both A and B"<<endl;
+    int answer3;
+    cin>>answer3;
+    if(answer3==1){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 1"<<endl;
+        wrong++;
+    }
+    
+     cout<<"Q-4 Which type of memory is used by an Array in C++ programming language? "<<endl;
+    cout<<"(1)Contiguous (2)Non-Contiguous (3)Both 1 and 2 (4)None"<<endl;
+    int answer4;
+    cin>>answer4;
+    if(answer4==1){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 1"<<endl;
+        wrong++;
+    }
+    
+     cout<<"Q-5 Which of the following can be considered as the object of an array? "<<endl;
+    cout<<"(1)Index of an array (2)Elements of the Array (3)Functions of the Array (4)All of the above"<<endl;
+    int answer5;
+    cin>>answer5;
+    if(answer5==2){
+        cout<<"Your answer is correct"<<endl;
+        correct++;
+    }else{
+        cout<<"Your answer is wrong,correct answer is option 2"<<endl;
+        wrong++;
+    }
+    cout<<endl;
+    cout<<"*************RESULT***************"<<endl;
+    cout<<"No. of correct answers "<<correct<<endl;
+    cout<<"Total marks: "<<correct<<"/5"<<endl;
+    if(correct>=3){
+        cout<<"You are eligible for interview"<<endl;
+    }else{
+        cout<<"You are not eligible for interview"<<endl;
+    }
+}
+
+int main()
+{   int roll;
+    cout<<"******************QUIZ**********************"<<endl;
+    cout<<"INSTRUCTIONS"<<endl;
+    cout<<"1)Quiz will contain 5 question and it will be of multiple choice"<<endl;
+    cout<<"2)First 84 roll no. will solve set-a and rest will do set-b"<<endl;
+    cout<<"3)Candidate who has score greater than 2 will be eligible for interview"<<endl;
+    cout<<"Enter your Roll No."<<endl;
+    cin>>roll;
+    if((roll>=1)&&(roll<=84)){
+        cout<<"You will solve set-A"<<endl;
+        seta();
+    }else if((roll>=85)&&(roll<=168)){
+        cout<<"You will solve set-B"<<endl;
+        setb();
+    }
+    
+
+    return 0;
+}
